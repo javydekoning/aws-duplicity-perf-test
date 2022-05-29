@@ -1,0 +1,184 @@
+==============================================================================
+5.10.109-104.500.amzn2.aarch64
+==============================================================================
+Preparing instance....
+Package unzip-6.0-43.amzn2.aarch64 already installed and latest version
+Public key for duplicity-0.7.19-1.el7.aarch64.rpm is not installed
+ghcr.io/tecnativa/docker-duplicity-s3:latest
+install took 25 seconds
+==============================================================================
+Starting s3 download....
+s3 download took 75 seconds
+==============================================================================
+Unzipping example dataset....
+unzip took 511 seconds
+==============================================================================
+Starting backup of 672926 files (72G)
+==============================================================================
+DOCKER: Starting backup....
+Local and Remote metadata are synchronized, no sync needed.
+Last full backup date: none
+299.9MB 00:01:00 [1.5MB/s] [>                                        ] 0% ETA 4h
+[F[2K599.8MB 00:02:00 [2.5MB/s] [>                                        ] 0% ETA 3h 59min
+[F[2K899.8MB 00:03:00 [3.3MB/s] [>                                        ] 1% ETA 3h 58min
+[F[2K1.3GB 00:04:00 [4.3MB/s] [>                                        ] 1% ETA 3h 38min
+[F[2K1.6GB 00:05:00 [4.5MB/s] [>                                        ] 2% ETA 3h 41min
+[F[2K1.9GB 00:06:00 [4.7MB/s] [=>                                       ] 2% ETA 3h 42min
+[F[2K2.2GB 00:07:00 [5.3MB/s] [=>                                       ] 3% ETA 3h 33min
+[F[2K2.5GB 00:08:00 [5.2MB/s] [=>                                       ] 3% ETA 3h 34min
+[F[2K2.8GB 00:09:00 [5.1MB/s] [=>                                       ] 4% ETA 3h 35min
+[F[2K3.1GB 00:10:00 [5.1MB/s] [=>                                       ] 4% ETA 3h 36min
+[F[2K3.5GB 00:11:00 [5.6MB/s] [=>                                       ] 4% ETA 3h 30min
+[F[2K3.8GB 00:12:00 [5.4MB/s] [==>                                      ] 5% ETA 3h 30min
+[F[2K4.1GB 00:13:00 [5.3MB/s] [==>                                      ] 5% ETA 3h 31min
+[F[2K4.3GB 00:14:00 [4.7MB/s] [==>                                      ] 6% ETA 3h 36min
+[F[2K4.6GB 00:15:00 [4.8MB/s] [==>                                      ] 6% ETA 3h 36min
+[F[2K4.9GB 00:16:00 [4.8MB/s] [==>                                      ] 6% ETA 3h 35min
+[F[2K5.2GB 00:17:00 [4.9MB/s] [==>                                      ] 7% ETA 3h 35min
+[F[2K5.5GB 00:18:00 [4.9MB/s] [===>                                     ] 7% ETA 3h 34min
+[F[2K5.8GB 00:19:00 [4.9MB/s] [===>                                     ] 8% ETA 3h 34min
+[F[2K6.1GB 00:20:00 [5.0MB/s] [===>                                     ] 8% ETA 3h 33min
+[F[2K6.3GB 00:21:00 [5.0MB/s] [===>                                     ] 8% ETA 3h 33min
+[F[2K6.6GB 00:22:00 [5.0MB/s] [===>                                     ] 9% ETA 3h 32min
+[F[2K6.9GB 00:23:00 [5.0MB/s] [===>                                     ] 9% ETA 3h 31min
+[F[2K7.2GB 00:24:00 [5.0MB/s] [====>                                    ] 10% ETA 3h 30min
+[F[2K7.4GB 00:25:00 [4.5MB/s] [====>                                    ] 10% ETA 3h 33min
+[F[2K7.7GB 00:26:01 [4.6MB/s] [====>                                    ] 10% ETA 3h 32min
+[F[2K8.0GB 00:27:01 [4.7MB/s] [====>                                    ] 11% ETA 3h 31min
+[F[2K8.3GB 00:28:01 [4.8MB/s] [====>                                    ] 11% ETA 3h 30min
+[F[2K8.6GB 00:29:01 [4.9MB/s] [====>                                    ] 12% ETA 3h 29min
+[F[2K8.9GB 00:30:01 [4.9MB/s] [=====>                                   ] 12% ETA 3h 28min
+[F[2K9.2GB 00:31:01 [4.9MB/s] [=====>                                   ] 12% ETA 3h 27min
+[F[2K9.5GB 00:32:01 [5.0MB/s] [=====>                                   ] 13% ETA 3h 26min
+[F[2K9.8GB 00:33:01 [5.0MB/s] [=====>                                   ] 13% ETA 3h 26min
+[F[2K10.1GB 00:34:01 [5.0MB/s] [=====>                                   ] 14% ETA 3h 25min
+[F[2K10.2GB 00:35:01 [4.5MB/s] [=====>                                   ] 14% ETA 3h 26min
+[F[2K10.5GB 00:36:01 [4.6MB/s] [=====>                                   ] 14% ETA 3h 25min
+[F[2K10.8GB 00:37:01 [4.7MB/s] [======>                                  ] 15% ETA 3h 24min
+[F[2K11.0GB 00:38:01 [4.3MB/s] [======>                                  ] 15% ETA 3h 25min
+[F[2K11.3GB 00:39:01 [4.5MB/s] [======>                                  ] 16% ETA 3h 24min
+[F[2K11.6GB 00:40:01 [4.7MB/s] [======>                                  ] 16% ETA 3h 23min
+[F[2K11.9GB 00:41:01 [4.8MB/s] [======>                                  ] 16% ETA 3h 22min
+[F[2K12.1GB 00:42:01 [4.3MB/s] [======>                                  ] 17% ETA 3h 23min
+[F[2K12.4GB 00:43:01 [4.5MB/s] [=======>                                 ] 17% ETA 3h 22min
+[F[2K12.7GB 00:44:01 [4.7MB/s] [=======>                                 ] 17% ETA 3h 21min
+[F[2K13.0GB 00:45:01 [4.8MB/s] [=======>                                 ] 18% ETA 3h 20min
+[F[2K13.3GB 00:46:01 [4.8MB/s] [=======>                                 ] 18% ETA 3h 18min
+[F[2K13.5GB 00:47:01 [4.4MB/s] [=======>                                 ] 19% ETA 3h 19min
+[F[2K13.8GB 00:48:01 [4.6MB/s] [=======>                                 ] 19% ETA 3h 18min
+[F[2K14.1GB 00:49:02 [4.7MB/s] [=======>                                 ] 19% ETA 3h 17min
+[F[2K14.4GB 00:50:02 [5.3MB/s] [========>                                ] 20% ETA 3h 14min
+[F[2K14.6GB 00:51:02 [4.5MB/s] [========>                                ] 20% ETA 3h 15min
+[F[2K14.6GB 00:52:02 [3.2MB/s] [========>                                ] 20% ETA 3h 19min
+[F[2K14.6GB 00:53:02 [3.2MB/s] [========================================>] 100% ETA 0sec
+--------------[ Backup Statistics ]--------------
+StartTime 1653773095.58 (Sat May 28 21:24:55 2022)
+EndTime 1653776113.64 (Sat May 28 22:15:13 2022)
+ElapsedTime 3018.05 (50 minutes 18.05 seconds)
+SourceFiles 672945
+SourceFileSize 75876826737 (70.7 GB)
+NewFiles 672945
+NewFileSize 75876826737 (70.7 GB)
+DeletedFiles 0
+ChangedFiles 0
+ChangedFileSize 0 (0 bytes)
+ChangedDeltaSize 0 (0 bytes)
+DeltaEntries 672945
+RawDeltaSize 75841206642 (70.6 GB)
+TotalDestinationSizeChange 15687895272 (14.6 GB)
+Errors 0
+-------------------------------------------------
+
+Backup via duplicity (CONTAINER) took 3242 seconds
+==============================================================================
+NATIVE: Starting backup....
+Local and Remote metadata are synchronized, no sync needed.
+Last full backup date: none
+0.0KB 00:01:00 [0.0KB/s] [>                                        ] 0% ETA 1min
+0.0KB 00:02:00 [0.0KB/s] [>                                        ] 0% ETA 2min
+0.0KB 00:03:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:04:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:05:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:06:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:07:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:08:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:09:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:10:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:11:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:12:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:13:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:14:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:15:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:16:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:17:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:18:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:19:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:20:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:21:00 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:22:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:23:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:24:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:25:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:26:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:27:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:28:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:29:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:30:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:31:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:32:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:33:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:34:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:35:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:36:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:37:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:38:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:39:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:40:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:41:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:42:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:43:01 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:44:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:45:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:46:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:47:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:48:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:49:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:50:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:51:02 [0.0B/s] [>                                        ] 0% ETA Stalled!
+0.0KB 00:52:02 [0.0KB/s] [========================================>] 100% ETA 0sec
+--------------[ Backup Statistics ]--------------
+StartTime 1653776366.27 (Sat May 28 22:19:26 2022)
+EndTime 1653779340.63 (Sat May 28 23:09:00 2022)
+ElapsedTime 2974.35 (49 minutes 34.35 seconds)
+SourceFiles 672945
+SourceFileSize 75876826737 (70.7 GB)
+NewFiles 672945
+NewFileSize 75876826737 (70.7 GB)
+DeletedFiles 0
+ChangedFiles 0
+ChangedFileSize 0 (0 bytes)
+ChangedDeltaSize 0 (0 bytes)
+DeltaEntries 672945
+RawDeltaSize 75841206642 (70.6 GB)
+TotalDestinationSizeChange 15692064230 (14.6 GB)
+Errors 0
+-------------------------------------------------
+
+Backup via duplicity (NATIVE) took 3210 seconds
+==============================================================================
+DOCKER: Starting restore....
+Synchronizing remote metadata to local cache...
+Deleting local /root/.cache/duplicity/9a4345397f1d933f227a21bf5286baec/duplicity-full-signatures.20220528T212357Z.sigtar.gz (not authoritative at backend).
+Deleting local /root/.cache/duplicity/9a4345397f1d933f227a21bf5286baec/duplicity-full.20220528T212357Z.manifest (not authoritative at backend).
+Copying duplicity-full-signatures.20220528T221759Z.sigtar.gz to local cache.
+Copying duplicity-full.20220528T221759Z.manifest to local cache.
+Last full backup date: Sat May 28 22:17:59 2022
+Restore via duplicity (CONTAINER) took 714 seconds
+Restored 672926 files 72G
+==============================================================================
+NATIVE: Starting restore....
+Local and Remote metadata are synchronized, no sync needed.
+Last full backup date: Sat May 28 22:17:59 2022
+Restore via duplicity (NATIVE) took 632 seconds
+Restored 672926 files 72G
+==============================================================================
