@@ -13,10 +13,13 @@ const app = new App();
 
 const instancesToTest = [
   // 'c6g.large',
-  'm5zn.large',
   // 'c6i.large',
-  'c6i.xlarge',
-  'r6i.large',
+  // 'c6i.xlarge',
+  // 'm5zn.large',
+  'm5zn.xlarge',
+  'm5zn.2xlarge', 
+  'x2iedn.xlarge',
+  // 'r6i.large',
 ];
 
 class BackuptestingStack extends Stack {
@@ -87,7 +90,7 @@ poweroff`
         userData,
         role,
         blockDevices: [disk],
-      });
+      }).instance.addPropertyOverride('InstanceInitiatedShutdownBehavior', 'terminate');
     });
   }
 }

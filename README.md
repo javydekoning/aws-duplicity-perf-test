@@ -1,14 +1,48 @@
-# Welcome to your CDK TypeScript project
+# Test results duplicity
 
-This is a blank project for CDK development with TypeScript.
+**Seconds to backup/restore 672926 files 72G via Duplicity**
+Dataset used for testing:
+https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+|--------------------------------------------------------------|--------|--------|---------|--------|
+|                                                              |        |        |         |        |
+|                                                              | Backup |        | Restore |        |
+|                                                              | Docker | Native | Docker  | Native |
+| **c6a.large**                                                | 4182   | 3976   | 810     | 695    |
+| **c6g.large**                                                | 3872   | 3852   | 901     | 787    |
+| **c6i.large**                                                | 3556   | 3215   | 789     | 631    |
+| **c6i.xlarge**                                               | 3315   | 3030   | 737     | 604    |
+| **c7g.large**                                                | 3242   | 3210   | 714     | 632    |
+| **m5zn.2xlarge**                                             | 2766   | 2714   | 716     | 610    |
+| **m5zn.large**                                               | 2817   | 2784   | 693     | 574    |
+| **m5zn.xlarge**                                              | 2817   | 2782   | 690     | 589    |
+| **r6i.large**                                                | 3314   | 3026   | 759     | 622    |
+| **x2iedn.xlarge**                                            | 2791   | 2472   | 670     | 523    |
 
-## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Additional notes / tools
+
+Other tools I've considered:
+
+### Kopia
+
+Found at https://kopia.io/docs/ https://github.com/kopia/kopia 
+
+Faster backup performance. Main contributor seems to be the option to use [zstd](https://facebook.github.io/zstd/) compression. 
+Written in Go, multi-threaded, support for running in container. 
+
+Can mount backups (snapshots) for file-level restore. 
+
+This would be my tool of choice, however it hasn't reached it's first major version and they only support `+|-` one minor version today. Hence, a concern for storing long-term backups today.
+
+```
+kopia repository create filesystem --path /tmp/my-repository 
+kopia repository connect filesystem --path /tmp/my-repository
+kopia policy set --global --compression=zstd
+kopia snapshot create $HOME/Projects/github.com/kopia/kopia --parallel=8
+```
+
+### Duplicati2
+
+Not GA, slow release cycle unless when using canary (which might break). Can run in Container, but 
+Duplicati team doesn’t maintain their own images.
